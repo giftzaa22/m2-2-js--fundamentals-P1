@@ -14,6 +14,14 @@
 // For example: greeLong(["bob", "daniel"]) returns ["Hello daniel"]
 
 function greetLong(lst) {
+  let MyList=lst.filter (function(name){
+      return name.length>=4;
+  }
+  )
+    return MyList.map (function(name){
+      return `Hello ${name}`
+    }
+    )
   // lst is an array of strings
 }
 // -------------------------------------------------------------------------

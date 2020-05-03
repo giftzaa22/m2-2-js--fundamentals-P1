@@ -52,22 +52,40 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // Rick") is an element in that array. Log that array to the console.
 
 //
-//
-//
+const alternateRicks =
+'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
+const alternateRicksArray=alternateRicks.split(', ');
+console.log (alternateRicksArray);
 //
 // Q3
 // How many Ricks have been named in alternateRicks?
 // HINT: There are multiple ways to solve this one. Maybe try a `for` loop!
 
 //
-//
+const alternateRicks =
+'Simple Rick, Slow Rick, Tall Rick, Cop Rick, Doofus Rick, Past Rick, Replacement Rick, Insurance Rick, Sales Rick, Supervisor Rick, Cool Rick, Cowboy Rick, Tiny Rick, Cronenberg Rick, Teacher Rick, Farmer Rick, Future Rick, Rick J22, Evil Rick, Toxic Rick, Crunk Rick, Pickle Rick, The Scientist Formerly Known as Rick, Rick C-137';
+const alternateRicksArray=alternateRicks.split(', ')
+let  NumOfRicks = 0;
+for (let x = 0 ; x < alternateRicksArray.length ; x++ ){
+  if (alternateRicksArray[x].includes('Rick')){
+    NumOfRicks += 1;
+  }
+console.log('${NumOfRicks}');
+}
 //
 //
 // Q4
 // How many characters are there in rickSaying (without spaces)?
 
-//
-//
+const rickSaying = 'wubba lubba dub dub';
+const rickSayingArray=rickSaying.split('')
+let  NumOfChar=0 ;
+for (let x=0 ; x<rickSayingArray.length ; x++){
+  if (rickSayingArray[x]!==' '){
+    NumOfChar +=1 ;
+  }
+  console.log('NumOfChar');
+}
 //
 //
 // Q5
@@ -75,15 +93,18 @@ console.log(`A1) Morty has ${numberOfNames} names`);
 // string is wrong! Console Morty's name without "Antoine".
 
 //
-//
+const grandson = 'Morty Antoine Smith';
+const MortyRealName = grandson.replace ('Antoine',' ');
+console.log('${MortyRealName}');
 //
 //
 // Q6
 // Scary Terry is actually not an enemy. Remove him from the list and console only Rick's true enemies.
 
 //
-//
-//
+const enemies =
+  'Tammy Gueterman, Evil Morty, Zeep Xanflorp, Galactic Federation, Council of Ricks, Phoenixperson, Scary Terry, Abradolf Lincler, Supernova';
+  enemies.replace('Scary Terry',"Rick's true enemies");
 //
 // Q7 (STRETCH)
 // `secret` is an encrypted message! Let's see if we can figure out what it

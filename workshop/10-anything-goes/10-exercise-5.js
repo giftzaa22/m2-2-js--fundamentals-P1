@@ -13,6 +13,16 @@
 
 let armstrongNumbers = [];
 
-// write your loop here...
+for (let i=0; i<=999; i++){
+     let Num = i.toString().split('');
+     let sum = 0;
+
+  Num.forEach(function(item){
+    sum+=Number(item)*Number(item)*Number(item);
+  });   
+  if (sum === i){
+  armstrongNumbers.push(i);
+}
+}
 
 console.log(armstrongNumbers);

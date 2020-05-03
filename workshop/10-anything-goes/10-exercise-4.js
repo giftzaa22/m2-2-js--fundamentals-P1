@@ -5,6 +5,10 @@
 // Hint: consider using .filter(), .indexOf() and .lastIndexOf()
 
 function filterNonUnique(array) {
+   let UniqueNum = array.filter(function(item){
+     return array.indexOf (item) === array.lastindexOf (item);
+   });
+   return UniqueNum ;
 
 }
 

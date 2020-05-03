@@ -4,9 +4,21 @@
 
 // Also, wouldn't it be nice if there were a Math method that could simplify the code....
 // https://www.w3schools.com/jsreF/jsref_obj_math.asp
+function max(num1, num2) {
+    return Math.max(num1,num2);
+}
+    console.log(`${max(12,43)} win`);
+      
 
+// Call the function
+max(12, 43);
 // Q2b
 // What if we wanted to figure out the max of 4 integers, instead of 2?
+
+function max(num1, num2, num3, num4) {
+    return Math.max(num1,num2,num3,num4);
+}
+    console.log(`${max(12,43,30,50)} win`);
 
 // STRETCH
 // What if we wanted to write a function which took an unlimited number of

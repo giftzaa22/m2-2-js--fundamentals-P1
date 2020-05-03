@@ -13,6 +13,10 @@
 // For example: greet(["bob", "eric"]) returns ["Hello bob", "Hello eric"]
 
 function greet(lst) {
+  return lst.map(function(item){
+       return `Hello ${item}`
+  }
+  )
   // lst is an array of strings
 }
 

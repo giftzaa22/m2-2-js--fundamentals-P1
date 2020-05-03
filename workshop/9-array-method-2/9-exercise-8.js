@@ -12,6 +12,10 @@
 // Returns true if every element of lst is of length at least 5.
 // Otherwise returns false.
 function allLong(lst) {
+  lst.map (function (number){
+    return number.length >=5;
+    });
+    
   // lst is an array of strings
 }
 
